@@ -14,6 +14,16 @@
   </head>
 
   <body text="white">
+
+    <body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
     <h1><br>Pete Davidson</h1>
 
         <img class ="storyImage" src="stories/story10/pete-davidson1.jpg" alt="">
@@ -44,6 +54,27 @@
 
       <br>
       <br>
+
+      <script>
+      var modal = document.getElementById('myModal');
+
+      var img = document.getElementsByClassName('storyImage');
+      for(var i=0; i<img.length; i++){
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img[i].addEventListener('click',function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        })
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
 
     <form>
       <input class="MyButton" type="button" value="GO BACK" onclick="window.location.href='../time_cap_final/index.html'" />
