@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Capsule Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <h1> WHERE ARE WE TOGETHER NOW? </h1>
+
+    <div class="scrollmenu">
+      <marquee class="scrollmessage" behavior="scroll" direction="left" scrollamount="25">EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER</marquee>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body text="white">
+</head>
+
+<body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+    <h1>CLAIRE'S CONTROVERSY<br></h1>
+        <img class ="storyImage" src="stories/eMich_03/claires01.png" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_Danka01.png" alt="">
+        <img class ="storyImage" src="stories/eMich_03/claires_Danka02.png" alt="">
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_Danka03.png" alt="">
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_refinery01.png" alt="">
+        <img class ="storyImage" src="stories/eMich_03/claires_refinery02.png" alt="">
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_refinery03.png" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_tv01.png" alt="">
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_tv02.png" alt="">
+        <img class ="storyImage" src="stories/eMich_03/claires_tv03.png" alt="">
+        <br>
+        <br>
+        <img class ="storyImage" src="stories/eMich_03/claires_tv04.png" alt="">
+        <br>
+        <br>
+<!-- IMAGES SHOULD END BEFORE SCRIPT -->
+        <script>
+        var modal = document.getElementById('myModal');
+
+        var img = document.getElementsByClassName('storyImage');
+        for(var i=0; i<img.length; i++){
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img[i].addEventListener('click',function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          })
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
+    <form>
+      <input class="MyButton" type="button" value="GO BACK" onclick="window.location.href='../time_cap_final/index.html'" />
+    </form>
+
+      <br>
+      <br>
+
+    <footer>
+    <p>JOHN * ESMERALDA * SHAUN * ANINHA * KEESHAWN
+    <br>WANTED TO SHARE A <em>2019</em> CONVERSATION
+    <br>WITH YOU</p>
+  </footer>
+
+  </body>
+
+</html>

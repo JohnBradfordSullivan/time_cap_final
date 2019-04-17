@@ -5,16 +5,17 @@
   <title>Time Capsule Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
+<div id="website">
   <h1> WHERE ARE WE TOGETHER NOW? </h1>
 
   <div class="scrollmenu">
-    <marquee class="scrollmessage" behavior="scroll" direction="left" scrollamount="25">EXPLORE READ CONSIDER</marquee>
+    <marquee class="scrollmessage" behavior="scroll" direction="left" scrollamount="25">EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER</marquee>
   </div>
 
   <h2>Welcome to the Past, 2029 Users!</h2>
 
   <!-- this is the crazy carousel. just making a note to section it off from the other things. it is fairly simple when you look at the code, it is just link images and a bunch of divs that are named to help make it function. There is also text to ber used as a -->
-
 <div class="contain">
 
   <div class="row">
@@ -36,7 +37,7 @@
       <a href="../time_cap_final/story02.html">
       <div class="tile">
         <div class="tile__media">
-          <img class="tile__img" src="stories/story02/thepic.jpg" alt=""  />
+          <img class="tile__img" src="stories/story02/thepic2.jpg" alt=""  />
         </div>
         <div class="tile__details">
           <div class="tile__title">
@@ -45,6 +46,58 @@
         </div>
       </div>
       </a>
+
+      <a href="../time_cap_final_story07.html">
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="stories/eMich_01/cardi01.png" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            CARDI B DRUG SCANDAL
+          </div>
+        </div>
+      </div>
+    </a>
+
+      <a href="../time_cap_final_story08.html">
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="stories/eMich_02/lena01.png" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            LENA DUNHAM
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="../time_cap_final_story10.html">
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="stories/story10/pete-davidson1.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            PETE DAVIDSON
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="../time_cap_final_story09.html">
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="stories/eMich_03/star.png" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            CLAIRE'S CONTROVERSY
+          </div>
+        </div>
+      </div>
+    </a>
 
       <a href="../time_cap_final/story03.html">
       <div class="tile">
@@ -98,54 +151,22 @@
       </div>
       </a>
 
+      <a href="../time_cap_final/story11.html">
       <div class="tile">
         <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt=""  />
+          <img class="tile__img" src="stories/story11/Pratt01.jpg" alt=""  />
         </div>
         <div class="tile__details">
           <div class="tile__title">
-            HEADLINE
+            CHRIS PRATT
           </div>
         </div>
       </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            HEADLINE
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-10.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            HEADLINE
-          </div>
-        </div>
-      </div>
-
-
+      </a>
 
     </div>
   </div>
+
 
 </div>
 
@@ -160,9 +181,7 @@
   <form>
     <input class="MyButton" type="button" value="ABOUT" onclick="window.location.href='../time_cap_final/about.html'" />
   </form>
-  <form action="https://www.google.com/search?ei=7WmtXJ7FDoaf_QaN4IbgAw&q=call+out+culture&oq=call&gs_l=psy-ab.1.0.35i39l2j0i67l8.17510.20264..21541...1.0..0.109.397.2j2....2..0....1..gws-wiz.....6..0i71j0i131j0j0i131i67.OYrMbLbtMfo">
-    <input class="MyButton" type="button" value="READ MORE" />
-  </form>
+
   <footer>
     <br>
     <p>JOHN * ESMERALDA * SHAUN * ANINHA * KEESHAWN
@@ -171,5 +190,41 @@
   </footer>
 </body>
 
+</div>
+
+<p id="countdown"></p>
+<!-- <script>
+document.getElementById("website").style.display = 'none';
+document.getElementById("countdown").style.visibility = 'visible';
+// Set the date we're counting down to: April 15, 2029 00:00:00
+//To test page funcationality, change date to: April 15, 2019 16:15:10
+var countDownDate = new Date("April 15, 2029 00:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get todays date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Output the result in an element with id="demo"
+  document.getElementById("countdown").innerHTML = "<br><br><br><br><br><br><br><br><br><br>COUNTDOWN TO APRIL 15, 2029 @ MIDNIGHT:<br><br>" + days + " DAYS " + hours + " HOURS "
+  + minutes + " MINUTES " + seconds + " SECONDS"  + "<br><br><br><br> You will be able to participate in this<br> conversation when the countdown ends.";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").style.display = 'none';
+      document.getElementById("website").style.display = 'block';
+      // document.getElementById("demo").style.display = "none";
+      // document.getElementById(".visibility").style.display = "visible";
+    }
+    // document.getElementById(".visibility").style.display = "none";
+  // If the count down is over, write some text
+
+}, 1000);
+</script> -->
 
 </html>

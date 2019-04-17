@@ -7,16 +7,30 @@
     <h1> WHERE ARE WE TOGETHER NOW? </h1>
 
     <div class="scrollmenu">
-      <marquee class="scrollmessage" behavior="scroll" direction="left" scrollamount="25">EXPLORE READ CONSIDER</marquee>
+      <marquee class="scrollmessage" behavior="scroll" direction="left" scrollamount="25">EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER EXPLORE READ CONSIDER</marquee>
     </div>
 
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body text="white">
+
+  </head>
+
+  <body>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
     <h1><br>LOUIS CK & ME TOO</h1>
 
         <img class ="storyImage" src="stories/story01/louis01.jpg" alt="">
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -26,7 +40,11 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
         <img class ="storyImage" src="stories/story01/louis02.jpg" alt="">
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -36,6 +54,27 @@
 
       <br>
       <br>
+
+      <script>
+      var modal = document.getElementById('myModal');
+
+      var img = document.getElementsByClassName('storyImage');
+      for(var i=0; i<img.length; i++){
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img[i].addEventListener('click',function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        })
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
 
     <form>
       <input class="MyButton" type="button" value="GO BACK" onclick="window.location.href='../time_cap_final/index.html'" />
